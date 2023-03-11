@@ -1,0 +1,9 @@
+body{
+    margin: center;
+    font-family: sans-serif;
+    background-color: red;
+}
+
+.video{
+    align-self: auto;
+}
