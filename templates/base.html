@@ -6,13 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
   <script src="{{ url_for('static', filename='buttons.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar1.css')}}">
+  
   {% block head %} {% endblock %}
 </head>
+
 <body>
-  <button id="dashboard">Dashboard</button>
-  <button id="cam">Camera</button>
-  <button id="mainpage">Pagina Inicial</button>
-  <button id="myButton">My Button</button>
-  {% block body %} {% endblock %}
+<div class="container">
+  <div class="sidebar">
+    <h2>Categories</h2>
+    <button id="mainpage">Pagina Inicial</button>
+    <button id="dashboard">Dashboard</button>
+    <button id="cam">Camera</button>
+  </div>
+  {% block body %}  {% endblock %}
+</div>
+
+
 </body>
 </html>
